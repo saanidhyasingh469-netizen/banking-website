@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+  <users>
+    <user>
+      <id>1000</id>
+      <name>Kitteneshwar ji</name>
+      <email>kitteneshwar@example.com</email>
+      <password>1234</password>
+      <balance>50000</balance>
+    </user>
+  </users>
+  <transactions></transactions>
+</bank>

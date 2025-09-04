@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" data-page="summary">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LenaDenaBank • Summary</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+  <header class="app-header">
+    <div class="brand">
+      <span class="brand-icon">🏦</span>
+      <span class="brand-text">LenaDenaBank</span>
+    </div>
+    <nav class="nav">
+      <a href="dashboard.html" class="nav-link">Dashboard</a>
+      <a href="transaction.html" class="nav-link">Transfer</a>
+      <a href="summary.html" class="nav-link">Summary</a>
+      <a href="#" id="logoutBtn" class="nav-link danger">Logout</a>
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">🌓</button>
+    </nav>
+  </header>
+
+  <main class="page-container">
+    <div class="card">
+      <h2>Your Transaction History</h2>
+      <table class="table" id="transactionTable">
+        <thead>
+          <tr><th>From</th><th>To</th><th>Amount (₹)</th><th>Date</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer class="app-footer">© 2025 LenaDenaBank</footer>
+  <div id="toastRoot"></div>
+  <script src="script.js"></script>
+</body>
+</html>

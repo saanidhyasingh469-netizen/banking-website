@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" data-page="login">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LenaDenaBank • Login</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+  <header class="app-header">
+    <div class="brand">
+      <span class="brand-icon">🏦</span>
+      <span class="brand-text">LenaDenaBank</span>
+    </div>
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="register.html" class="nav-link">Register</a>
+      <a href="login.html" class="nav-link">Login</a>
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">🌓</button>
+    </nav>
+  </header>
+
+  <main class="page-container">
+    <div class="card">
+      <h2>Welcome back</h2>
+      <form id="loginForm" class="form">
+        <div class="form-field">
+          <label for="loginEmail">Email</label>
+          <input id="loginEmail" type="email" placeholder="name@example.com" required/>
+        </div>
+
+        <div class="form-field">
+          <label for="loginPassword">Password</label>
+          <input id="loginPassword" type="password" placeholder="Your password" required/>
+        </div>
+
+        <button class="btn btn-primary" type="submit">Login</button>
+        <p id="loginMsg" class="form-msg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </main>
+
+  <footer class="app-footer">© 2025 LenaDenaBank</footer>
+  <div id="toastRoot"></div>
+  <script src="script.js"></script>
+</body>
+</html>
